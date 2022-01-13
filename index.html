@@ -23,10 +23,17 @@
           </a>
         </div>
         <div class="flex-menu-main-nav">
-          <a href="#" class="active"><span>Détails de l'évènement</span></a>
-          <a href="#"><span>À propos</span></a>
-          <a href="#"><span>Contact</span></a>
-          <a href="#"><span>Évènements passés</span></a>
+          <a href="#" class="active"><p class="topnav">Détails de l'évènement</p>
+          </a>
+          <a href="#" class="topnav"><p class="topnav">À propos</p>
+          
+          </a>
+          <a href="#"><p class="text-menu">Contact</p>
+          
+          </a>
+          <a href="#"><p class="text-menu">Évènements passés</p>
+          
+          </a>
         </div>
       </div>
     </div>
@@ -64,7 +71,7 @@
               name="reserve"
               action="index.html"
               method="get"
-              onsubmit="return validate();"
+              onsubmit="return false"
             >
 
 
@@ -80,7 +87,7 @@
                   required
                   maxlength="20"
                 />
-                <span id="prenom_manquant"></span>
+                <span id="prenom_manquant" class="error"></span>
                 <br>
               </div>
 
@@ -95,7 +102,7 @@
                   required
                   maxlength="20"
                 />
-                <span id="nom_manquant"></span>
+                <span id="nom_manquant" class="error"></span>
                 <br>
               </div>
 
@@ -109,7 +116,7 @@
                   name="email"
                   required
                 />
-                <span id="email_manquant"></span>
+                <span id="email_manquant" class="error"></span>
                 <br>
               </div>
 
@@ -123,7 +130,7 @@
                   name="ddn"
                   required
                 />
-                <span id="ddn_manquante"></span>
+                <span id="ddn_manquante" class="error"></span>
                 <br>
               </div>
 
@@ -139,7 +146,7 @@
                 max="99"
                 required
                 >
-                <span id="nombre_manquant"></span>
+                <span id="nombre_manquant" class="error"></span>
                 <br>
               </div>
 
@@ -223,6 +230,8 @@
                   <span class="checkbox-icon"></span>
                   Portland</label
                 >
+                <br>
+                <span class="error" id="saisie"></span>
               </div>
 
               <div class="formData">
@@ -239,6 +248,7 @@
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
                 <br>
+                <span class="error" id="saisie2"></span>
 
 
                 <input 
@@ -261,7 +271,7 @@
                 class="button"
                 value="C'est parti"
                 id="bouton_envoi"
-                onclick="test()"
+                onclick="validate()"
               />
 
 
@@ -300,3 +310,4 @@
     <script src="scripts/modal.js"></script>
   </body>
 </html>
+
