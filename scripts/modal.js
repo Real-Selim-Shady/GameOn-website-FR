@@ -1,9 +1,18 @@
-function editNav() {
+/*function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += "responsive";
   } else {
     x.className = "topnav";
+  }
+}*/
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 
@@ -12,6 +21,7 @@ function editNav() {
 let modalid = document.getElementById("modalid1");
 let croix = document.getElementById("croix");
 let go = document.getElementById("btnmodal1");
+let go2 = document.getElementById("btnmodalb")
 let croix2 = document.getElementById("croix2");
 let croix3 = document.getElementById("croix3");
 let modalid2 = document.getElementById("modalid2");
@@ -24,6 +34,10 @@ croix.onclick = function() {
 }
 
 go.onclick = function() {
+  modalid.style.display= "block";
+}
+
+go2.onclick = function() {
   modalid.style.display= "block";
 }
 

@@ -12,31 +12,46 @@
     />
   </head>
   <body>
-    <div class="topnav" id="myTopnav">
-      <div class="header-logo">
-        <img class="header-logo" alt="logo" src="images/Logo.png" width="auto" height="auto"/>
-      </div>
-      <div class="main-navbar">
-        <div class="flex-icon-main-nav">
+    <div style="display:none">
+      <div class="topnav" id="myTopnav">
+        <div class="header-logo">
+          <img alt="logo" src="images/Logo.png" width="auto" height="auto" />
+        </div>
+        <div class="main-navbar">
+          <a href="#" class="active"><span>Détails de l'évènement</span></a>
+          <a href="#"><span>À propos</span></a>
+          <a href="#"><span>Contact</span></a>
+          <a href="#"><span>Évènements passés</span></a>
           <a href="javascript:void(0);" class="icon" onclick="editNav()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
-        <div class="flex-menu-main-nav">
-          <a href="#" class="active"><p class="topnav">Détails de l'évènement</p>
-          </a>
-          <a href="#" class="topnav"><p class="topnav">À propos</p>
-          
-          </a>
-          <a href="#"><p class="text-menu">Contact</p>
-          
-          </a>
-          <a href="#"><p class="text-menu">Évènements passés</p>
-          
-          </a>
-        </div>
       </div>
     </div>
+
+    <header>
+      <div class="topnav">
+        <div class="supraflex_header">
+          <div class="flex_logo_header">
+            <img alt="logo" src="images/Logo.png" class="header-logo">
+          </div>
+          <div class="flex_menu_header">
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks" class="topnav">
+              <a href="#" class="active">Détails de l'évènement</a>
+              <a href="#">À propos</a>
+              <a href="#">Contact</a>
+              <a href="#">Évènements passés</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
       <div class="hero-section">
         <div class="hero-content">
@@ -55,7 +70,7 @@
         <div class="hero-img">
           <img src="images/bg_img.jpg" alt="img" />
         </div>
-        <button class="btn-signup modal-btn">
+        <button id="btnmodalb" class="btn-signup modal-btn">
           je m'inscris
         </button>
       </div>
