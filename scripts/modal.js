@@ -16,6 +16,19 @@ function myFunction() {
   }
 }
 
+function newFunction(x) {
+  var x = document.getElementById("myLinks");
+  if (y.matches) { // If media query matches
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+var y = window.matchMedia("(min-width: 801px)")
+newFunction(y) // Call listener function at run time
+y.addListener(newFunction) // Attach listener function on state changes
+
 /////
 
 let modalid = document.getElementById("modalid1");
