@@ -338,6 +338,7 @@ input {
   border-color: transparent;
   font-size: 20px;
   height: 48px;
+  font-family: 'DM Sans';
 }
 .formData[data-error]::after {
   content: attr(data-error);
