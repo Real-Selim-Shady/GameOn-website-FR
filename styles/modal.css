@@ -228,20 +228,6 @@ main {
   font-size: 14px;
 }
 
-.button {
-  background: #fe142f;
-  margin-top: 0.5em;
-  padding: 1em;
-  color: #fff;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.button:hover {
-  background: #3876ac;
-}
-
 .smFont {
   font-size: 16px;
 }
