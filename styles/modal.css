@@ -568,6 +568,7 @@ input[data-error]::after {
   overflow: hidden;
   box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  position: relative;
 }
 .hero-content {
   padding: 51px 67px;
@@ -588,12 +589,14 @@ input[data-error]::after {
 }
 .hero-content > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .hero-headline {
   font-size: 4rem;
   font-weight: normal;
   white-space: nowrap;
+  position: relative;
+  z-index: 3;
 }
 .hero-text {
   width: 146%;
@@ -611,6 +614,8 @@ input[data-error]::after {
 }
 .hero-img {
   grid-column: span 8;
+  z-index: 1;
+  position: relative;
 }
 .hero-img img {
   width: 100%;
