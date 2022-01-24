@@ -1,12 +1,5 @@
-/*function editNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += "responsive";
-  } else {
-    x.className = "topnav";
-  }
-}*/
 
+/*Gestion du burger menu de la version mobile*/
 function burgermenu() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -18,7 +11,7 @@ function burgermenu() {
 
 function menu_apparition(x) {
   var x = document.getElementById("myLinks");
-  if (y.matches) { // If media query matches
+  if (y.matches) { 
     x.style.display = "block";
   } else {
     x.style.display = "none";
@@ -26,11 +19,11 @@ function menu_apparition(x) {
 }
 
 var y = window.matchMedia("(min-width: 801px)")
-menu_apparition(y) // Call listener function at run time
-y.addListener(menu_apparition) // Attach listener function on state changes
+menu_apparition(y) 
+y.addListener(menu_apparition) 
 
 /////
-
+/*Variables de gestion de la pop-in de formulaire*/
 let modalid = document.getElementById("modalid1");
 let croix = document.getElementById("croix");
 let go = document.getElementById("btnmodal1");
@@ -42,6 +35,7 @@ let btn_envoi = document.getElementById("bouton_envoi");
 
 /////
 
+/*Fonctions de gestion de la pop-in de formulaire*/
 croix.onclick = function() {
   modalid.style.display= "none" ;
 }
@@ -56,7 +50,7 @@ go2.onclick = function() {
 
 ////
 
-
+/*Variables visant à aider l'utilisateur à compléter le formulaire*/
 let prenom = document.getElementById("first");
 let prenom_m = document.getElementById("prenom_manquant");
 let prenom_v = /^[a-zA-ZéèëÉÈËçÇîïÎÏ][a-zéèëçîï]+([-'\s][a-zA-ZéèëÉÈËîïÎÏ][a-zéèëçîï]+)?$/;
@@ -81,7 +75,7 @@ let hors_champs = document.getElementById("saisie")
 let checkbox1 = document.getElementById("saisie2")
 
 
-
+/*Fonctions visant à faire vivre les contraintes de remplissage, et faisant apparaitre les messages d'erreur*/
 function validate (e) {
   var valid = true;
   console.log(checkbox1.value);
@@ -190,7 +184,7 @@ function validate (e) {
 
 }
 
-
+/*Fermeture de la pop-in d'erreur*/
 croix2.onclick = function() {
   modalid2.style.display= "none" ;
 }
